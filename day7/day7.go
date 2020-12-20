@@ -116,9 +116,9 @@ func main() {
 				break
 			}
 
-			// find bagcount in input string,convert to int 
-      // the regex works since there can only be single digit bags of one color whithin a parent bag
-			countString := re.FindString(childString) 
+			// find bagcount in input string,convert to int
+			// the regex works since there can only be single digit bags of one color whithin a parent bag
+			countString := re.FindString(childString)
 			bagCount, _ := strconv.Atoi(countString)
 
 			// remove number bag count string
@@ -140,7 +140,7 @@ func main() {
 				treeNodes[childString] = &child
 			}
 
-			// adds child node to tree parent node 
+			// adds child node to tree parent node
 			parent.addChild(bagCount, treeNodes[childString])
 		}
 	}

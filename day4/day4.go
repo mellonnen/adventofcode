@@ -52,8 +52,8 @@ func main() {
 		valid1++
 	}
 	if rex2.MatchString(b.String()) {
-			valid2++
-		}
+		valid2++
+	}
 	fmt.Println(valid1)
 	fmt.Println(valid2)
 	if err := scanner.Err(); err != nil {

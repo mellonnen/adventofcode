@@ -26,8 +26,8 @@ func main() {
 					allSum++
 				}
 			}
-      groupCount = 0
-      allMap = make(map[rune]int)
+			groupCount = 0
+			allMap = make(map[rune]int)
 
 		} else {
 			groupCount++
