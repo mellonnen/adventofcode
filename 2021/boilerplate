@@ -1,12 +1,12 @@
 fn main(){
+    let in_str = include_str!("../input");
     println!("PART1\\n=====\\n"); 
-    println!("\\n{}", part1());
+    println!("\\n{}", part1(in_str));
     println!("\\nPART2\\n=====\\n");
-    println!("{}", part2());
+    println!("{}", part2(in_str));
 }
 
-fn part1() -> i64{
-    let in_str = include_str!("../input");
+fn part1(in_str: &str) -> i64{
     let input: Vec<i64> = in_str
         .trim()
         .split("\\n")
@@ -15,8 +15,7 @@ fn part1() -> i64{
     0
 }
 
-fn part2() -> i64{
-    let in_str = include_str!("../input");
+fn part2(in_str: &str) -> i64{
     let input: Vec<i64> = in_str
         .trim()
         .split("\\n")
