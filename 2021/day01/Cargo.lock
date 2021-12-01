@@ -5,12 +5,3 @@ version = 3
 [[package]]
 name = "day1"
 version = "0.1.0"
-dependencies = [
- "easy_io",
-]
-
-[[package]]
-name = "easy_io"
-version = "0.3.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "4d469791a83488810ac7dbcaaff59534a9508c923e65d0369edc4a6ea3c5d8b8"
