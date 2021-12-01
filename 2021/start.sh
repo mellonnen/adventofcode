@@ -1,18 +1,18 @@
-#!/bin/sh
+#!/bin/zsh
 
-mkdir "day$1"
+day=$(date | awk '{ print $3 }')
+mkdir "day$day"
 
-curl "https://adventofcode.com/2021/day/$1/input" \
+curl "https://adventofcode.com/2021/day/$day/input" \
   -H 'authority: adventofcode.com' \
   -H "cookie: session=$(cat ./.cookie.txt)" \
   --compressed \
-  -o "day$1/input"
+  -o "day$day/input"
 
-cd "day$1" 
+cd "day$day" 
 
 cargo init --bin --vcs=none
 
-echo "easy_io = "0.3.0"" >> Cargo.toml
+echo 'easy_io = "0.3.0"' >> Cargo.toml
 
-echo "\nProblem description here!"
-echo "https://adventofcode.com/2021/day/$1"
+wsl-open "https://adventofcode.com/2021/day/$day"
