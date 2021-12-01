@@ -26,9 +26,6 @@ cd "$dir"
 # init rust project.
 cargo init --bin --vcs=none
 
-# add dependecy.
-# NOTE: library has some annoying issues, might wanna find something better.
-echo 'easy_io = "0.3.0"' >> Cargo.toml
-
+echo "$(cat ../boilerplate)" > src/main.rs
 # open problem description in browser.
 wsl-open "https://adventofcode.com/2021/day/$day"

@@ -1,0 +1,26 @@
+fn main(){
+    println!("PART1\\n=====\\n"); 
+    println!("\\n{}", part1());
+    println!("\\nPART2\\n=====\\n");
+    println!("{}", part2());
+}
+
+fn part1() -> i64{
+    let in_str = include_str!("../input");
+    let input: Vec<i64> = in_str
+        .trim()
+        .split("\\n")
+        .map(|s| s.parse::<i64>().unwrap())
+        .collect();
+    0
+}
+
+fn part2() -> i64{
+    let in_str = include_str!("../input");
+    let input: Vec<i64> = in_str
+        .trim()
+        .split("\\n")
+        .map(|s| s.parse::<i64>().unwrap())
+        .collect();
+    0
+}
