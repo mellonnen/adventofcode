@@ -6,12 +6,16 @@ fn main(){
     println!("{}", part2(in_str));
 }
 
-fn part1(in_str: &str) -> i64{
-    let input: Vec<&str> = in_str.trim().split_whitespace().collect();
+fn part1(input: &str) -> i64{
+    for line in input.trim().lines() {
+        break;
+    }
     0
 }
 
 fn part2(in_str: &str) -> i64{
-    let input: Vec<&str> = in_str.trim().split_whitespace().collect();
+    for line in input.trim().lines() {
+        break;
+    }
     0
 }
