@@ -7,19 +7,11 @@ fn main(){
 }
 
 fn part1(in_str: &str) -> i64{
-    let input: Vec<i64> = in_str
-        .trim()
-        .split("\\n")
-        .map(|s| s.parse::<i64>().unwrap())
-        .collect();
+    let input: Vec<&str> = in_str.trim().split_whitespace().collect();
     0
 }
 
 fn part2(in_str: &str) -> i64{
-    let input: Vec<i64> = in_str
-        .trim()
-        .split("\\n")
-        .map(|s| s.parse::<i64>().unwrap())
-        .collect();
+    let input: Vec<&str> = in_str.trim().split_whitespace().collect();
     0
 }
