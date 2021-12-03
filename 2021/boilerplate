@@ -13,7 +13,7 @@ fn part1(input: &str) -> i64{
     0
 }
 
-fn part2(in_str: &str) -> i64{
+fn part2(input: &str) -> i64{
     for line in input.trim().lines() {
         break;
     }
