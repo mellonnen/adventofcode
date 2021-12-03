@@ -36,6 +36,7 @@ fn part1(input: &str) -> usize {
     epsilon_rate * gamma_rate
 }
 
+// O(n)
 fn part2(input: &str) -> usize {
     // vector of sets of the numbers that with a set bit at vector index.
     // so set[0] => all numbers with a set bit at position 0. (like 10000)
