@@ -1,7 +1,7 @@
 fn main(){
     let in_str = include_str!("../input");
     println!("PART1\\n=====\\n"); 
-    println!("\\n{}", part1(in_str));
+    println!("{}", part1(in_str));
     println!("\\nPART2\\n=====\\n");
     println!("{}", part2(in_str));
 }
